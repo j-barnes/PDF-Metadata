@@ -1,0 +1,14 @@
+services:
+  pdf_metadata.event_subscriber:
+    class: Drupal\pdf_metadata\EventSubscriber\EntityEventSubscriber
+    arguments: ['@pdf_metadata.metatadata_creation_service']
+    tags:
+      - { name: event_subscriber }
+
+  pdf_metadata.metatadata_creation_service:
+    class: Drupal\pdf_metadata\Service\MetadataCreationService
+    arguments: ['@entity_type.manager', '@token.entity_mapper', '@file_system', '@token', '@logger.channel.pdf_metadata']
+
+  logger.channel.pdf_metadata:
+    parent: logger.channel_base
+    arguments: ['pdf_metadata']

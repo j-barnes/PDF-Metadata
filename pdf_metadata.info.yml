@@ -1,0 +1,10 @@
+name: PDF Metadata
+description: 'Allows for the appending of metadata to PDF files.'
+type: module
+core_version_requirement: ^9 || ^10
+package: custom
+dependencies:
+  - hook_event_dispatcher
+  - core_event_dispatcher
+  - drupal:file (>= 8.8.0)
+  - token:token

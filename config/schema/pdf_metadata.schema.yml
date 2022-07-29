@@ -1,0 +1,26 @@
+# Schema for the PDF Metadata module.
+field.field.*.*.*.third_party.pdf_metadata:
+  type: mapping
+  label: 'PDF Metadata Settings'
+  mapping:
+    enabled:
+      type: boolean
+      label: 'Enable PDF Metadata?'
+    reference_enabled:
+      type: boolean
+      label: 'Enable PDF Metadata for Referencing Entities?'
+    meta_types:
+      type: mapping
+      mapping:
+        title:
+          type: string
+          label: 'Title'
+        author:
+          type: string
+          label: 'Author'
+        subject:
+          type: string
+          label: 'Subject'
+        keywords:
+          type: string
+          label: 'Keywords'

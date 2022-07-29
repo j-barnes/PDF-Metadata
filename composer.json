@@ -1,0 +1,22 @@
+{
+  "name": "drupal/pdf_metadata",
+  "description": "Provides a service that adds metadata to pdfs.",
+  "type": "drupal-module",
+  "keywords": ["Drupal", "PDF", "Metadata"],
+  "homepage": "http://drupal.org/project/pdf_metadata",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Jordan Barnes",
+      "homepage": "https://www.drupal.org/u/j-barnes",
+      "role": "Maintainer"
+    }
+  ],
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/pdf_metadata",
+    "source": "http://cgit.drupalcode.org/pdf_metadata"
+  },
+  "require": {
+    "wiser/phpexiftool": "^4.2"
+  }
+}

@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains core functions for the PDF Metadata module.
+ */
+
+/**
+ * Implements hook_help().
+ */
+function pdf_metadata_help($route_name) {
+  switch ($route_name) {
+    case 'help.page.pdf_metadata':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('This module intends to allow for automatic updating of metadata for PDF files.') . '</p>';
+      $output .= '<p>';
+      $output .= t('Visit the <a href=":project_link">PDF Metadata project pages</a> on Drupal.org for more information.', [
+        ':project_link' => 'https://www.drupal.org/project/pdf_metadata',
+      ]);
+      $output .= '</p>';
+
+      return $output;
+  }
+}
